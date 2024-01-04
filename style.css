@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #323444;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90vw;
+    height: 40%;
+    height: 40%;
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 500px;
+    height: 400px;
+    background-color: #255963;
+    padding: 20px;
+
+}
+
+.box:hover {
+    scale: 1.1;
+    transition: .5s ease-out;
+    cursor: pointer;
+}
+
+.container:hover>.box:not(:hover).box {
+    filter: brightness(.5) blur(10px);
+}
